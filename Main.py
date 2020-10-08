@@ -4,6 +4,7 @@
 from NumberFunctions import *
 from sys import exit
 
+
 while True:
     try:
         x = int(input("Give me a number: "))

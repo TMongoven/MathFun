@@ -62,8 +62,10 @@ def mersenne(x):
         return 1
 
 def picheck(x):
-    with open('pi.txt', 'r') as textfile:
-        string = textfile.read()
+    import os
+    import sys
+    with open(os.path.join(sys.path[0], "pi.txt"), "r") as f:
+        string = f.read()
     index = string.find(str(x))
     index -= 1
     count = string.count(str(x))
